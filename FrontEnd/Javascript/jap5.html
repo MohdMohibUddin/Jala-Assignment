@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prototype Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #6c3483;
+    }
+    #output {
+      margin-top: 25px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Adding Properties using Prototype</h2>
+  <button onclick="showPersonInfo()">Show Person Info</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Constructor function
+    function Person(firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+
+    // Adding a method using prototype
+    Person.prototype.fullName = function() {
+      return this.firstName + " " + this.lastName;
+    };
+
+    // Adding a new property using prototype
+    Person.prototype.country = "India";
+
+    // Function to show output
+    function showPersonInfo() {
+      const person1 = new Person("Mohib", "Uddin");
+
+      const outputText =
+        "Name: " + person1.fullName() + "<br>" +
+        "Country: " + person1.country;
+
+      document.getElementById("output").innerHTML = outputText;
+    }
+  </script>
+
+</body>
+</html>

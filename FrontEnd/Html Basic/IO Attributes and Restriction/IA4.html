@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Target Attribute Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    a {
+      display: block;
+      margin: 15px 0;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #aaa;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quick Links Portal</h1>
+
+  <div class="container">
+
+    <h2>Links with Different Targets</h2>
+
+    <a href="https://www.google.com" target="_blank">Open Google (New Tab)</a>
+
+    <a href="https://www.wikipedia.org" target="_self">Open Wikipedia (Same Tab)</a>
+
+    <a href="https://www.openai.com" target="displayFrame">Open OpenAI (In Iframe Below)</a>
+
+    <a href="https://example.com" target="_top">Open Example.com (Top Level)</a>
+
+    <iframe name="displayFrame" title="Display Frame"></iframe>
+
+  </div>
+
+</body>
+</html>

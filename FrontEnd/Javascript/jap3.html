@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter Program</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    #countValue {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #2c3e50;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1f6391;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Counter</h1>
+
+  <div id="countValue">Current Count: 0</div>
+  <button onclick="incrementCount()">Count</button>
+
+  <script>
+    let count = 0;
+
+    function incrementCount() {
+      count++; // increase count
+      document.getElementById("countValue").innerText = "Current Count: " + count;
+    }
+  </script>
+
+</body>
+</html>

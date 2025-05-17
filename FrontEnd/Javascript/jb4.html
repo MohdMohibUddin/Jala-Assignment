@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Access Object Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #2c3e50;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6c3483;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Object Property Access in JavaScript</h1>
+  <button onclick="showPerson()">Show Person Info</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Create object
+    const person = {
+      firstname: "Mohd",
+      lastname: "Mohib Uddin"
+    };
+
+    function showPerson() {
+      // Accessing properties in two different ways
+      const method1 = person.firstname;      
+      const method2 = person["lastname"];     
+
+      const result = `
+        First Name (dot notation): ${method1}<br>
+        Last Name (bracket notation): ${method2}
+      `;
+
+      document.getElementById("output").innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>

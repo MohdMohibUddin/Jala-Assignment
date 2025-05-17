@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 50px;
+}
+
+.image-container {
+  display: inline-block;
+  background: white;
+  padding: 80px;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faded-image {
+  width: 800px;
+  height: 450px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  border-radius: 8px;
+}
+
+.faded-image:hover {
+  opacity: 1;
+}

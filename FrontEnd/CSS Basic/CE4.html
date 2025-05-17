@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Overflow Scroll Example</title>
+  <link rel="stylesheet" href="CE4.css" />
+</head>
+<body>
+
+  <h1>Overflow Handling with Scroll</h1>
+
+  <div class="box overflow-auto">
+    <h2>Auto Scroll</h2>
+    <p>This box uses <strong>overflow: auto</strong>. It shows scrollbars only when needed. Try resizing the window or viewing the full text content inside this box. This is useful when you want scrollbars to appear only if necessary.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec elit nec enim facilisis elementum. Donec at sem at orci dictum pharetra. Mauris nec lorem orci. Duis dignissim tellus id semper mattis. Sed vitae porta augue, et sollicitudin nisi.</p>
+  </div>
+
+  <div class="box overflow-scroll">
+    <h2>Always Scroll</h2>
+    <div class="scroll-content">
+      This box uses <strong>overflow: scroll</strong>. Scrollbars will always appear even if not needed.
+      <br /><br />
+      Scroll ↓↓
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore libero quas tenetur velit exercitationem in obcaecati corporis molestias voluptates voluptatem, illum sit aliquid iste!</p>
+    </div>
+  </div>
+
+  <div class="horizontal-scroll-container">
+    <h2>Horizontal Scroll</h2>
+    <div class="horizontal-scroll">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+    </div>
+  </div>
+
+</body>
+</html>

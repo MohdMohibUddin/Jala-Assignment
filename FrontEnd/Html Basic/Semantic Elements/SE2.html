@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Elements Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    article {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #343a40;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Article Section -->
+  <article>
+    <h1>The Rise of Semantic HTML</h1>
+    <p>Semantic HTML gives meaning to web page structure. Elements like <code>&lt;article&gt;</code>, <code>&lt;form&gt;</code>, and <code>&lt;table&gt;</code> help improve SEO, accessibility, and maintainability of websites.</p>
+    <p>In modern web development, using proper semantic tags is a sign of clean and professional coding practices.</p>
+  </article>
+
+  <!-- Form Section -->
+  <form>
+    <h2>Leave Your Feedback</h2>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Table Section -->
+  <h2>Recent Feedback Stats</h2>
+  <table>
+    <tr>
+      <th>User</th>
+      <th>Comment</th>
+      <th>Date</th>
+    </tr>
+    <tr>
+      <td>Roman </td>
+      <td>Very informative post!</td>
+      <td>2025-05-15</td>
+    </tr>
+    <tr>
+      <td>orton</td>
+      <td>Loved the clarity. Keep it up!</td>
+      <td>2025-05-14</td>
+    </tr>
+  </table>
+
+</body>
+</html>

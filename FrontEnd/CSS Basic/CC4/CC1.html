@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table Layout: Fixed vs Auto</title>
+  <link rel="stylesheet" href="CC1.css" />
+</head>
+<body>
+
+  <h1>Table Layout Comparison</h1>
+
+  <section>
+    <h2>Table with <code>table-layout: fixed</code></h2>
+    <table class="fixed-table">
+      <thead>
+        <tr>
+          <th>Sr. No</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+          <td>This is a long description that should not stretch the column too much.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+          <td>Short desc.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Table with <code>table-layout: auto</code> (default)</h2>
+    <table class="auto-table">
+      <thead>
+        <tr>
+          <th>Sr. No</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+          <td>This is a long description that should make the column expand based on content.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+          <td>Short desc.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>

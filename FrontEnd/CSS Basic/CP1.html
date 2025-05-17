@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table Border and Hover Page Color</title>
+  <link rel="stylesheet" href="CP1.css" />
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Age</th><th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Amit</td><td>25</td><td>Pune</td></tr>
+      <tr><td>Neha</td><td>22</td><td>Mumbai</td></tr>
+      <tr><td>Ravi</td><td>30</td><td>Delhi</td></tr>
+    </tbody>
+  </table>
+  <script>
+  const table = document.querySelector('table');
+  const body = document.body;
+
+  table.addEventListener('mouseenter', () => {
+    body.style.backgroundColor = '#76d7c4 '; // 
+  });
+
+  table.addEventListener('mouseleave', () => {
+    body.style.backgroundColor = 'gray'; // back to white
+  });
+</script>
+
+</body>
+</html>

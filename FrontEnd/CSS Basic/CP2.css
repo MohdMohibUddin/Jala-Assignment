@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background: #eef2f3;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #2a3a4c;
+  margin-bottom: 20px;
+}
+
+/* Visibility Boxes */
+.box {
+  width: 200px;
+  height: 60px;
+  margin: 10px 0;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  line-height: 30px;
+}
+
+.visible-box {
+  background-color: #27ae60;
+  visibility: visible;
+}
+
+.hidden-box {
+  background-color: #e74c3c;
+  visibility: hidden;
+}
+
+/* Table for visibility collapse */
+table {
+  width: 60%;
+  margin: 20px 0 40px 0;
+  border-collapse: collapse;
+  border: 2px solid #34495e;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+td {
+  border: 1px solid #34495e;
+  padding: 10px;
+  text-align: center;
+}
+
+.collapsed-row {
+  visibility: collapse;
+  background-color: #f8d7da;
+}
+
+/* Display */
+.display-none {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.display-inline {
+  display: inline;
+  background-color: #8e44ad;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.display-block {
+  display: block;
+  background-color: #2980b9;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.display-contents {
+  display: contents;
+  font-style: italic;
+  margin: 10px 0 20px 0;
+  color: #34495e;
+}
+
+.display-contents span {
+  background-color: #f39c12;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.display-list-item {
+  display: list-item;
+  list-style-type: square;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #2c3e50;
+  padding: 5px 0;
+}

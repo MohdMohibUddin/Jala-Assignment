@@ -1,0 +1,44 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+ul, ol {
+  width: 300px;
+  margin: 20px auto;
+  padding-left: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.circle-list {
+  list-style-type: circle;
+}
+
+.square-list {
+  list-style-type: square;
+}
+
+.none-list {
+  list-style-type: none;
+}
+
+.decimal-list {
+  list-style-type: decimal;
+}
+
+.roman-list {
+  list-style-type: upper-roman;
+}
+
+.lower-alpha-list {
+  list-style-type: lower-alpha;
+}

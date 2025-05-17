@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>call() vs apply()</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Using call() and apply()</h2>
+
+  <button onclick="useCall()">Use call()</button>
+  <button onclick="useApply()">Use apply()</button>
+
+  <div id="output"></div>
+
+  <script>
+    const person = {
+      fullName: function(city, country) {
+        return this.firstName + " " + this.lastName + " from " + city + ", " + country;
+      }
+    };
+
+    const user = {
+      firstName: "Mohib",
+      lastName: "Uddin"
+    };
+
+    function useCall() {
+      let result = person.fullName.call(user, "Hyderabad", "India"); // arguments as comma-separated
+      document.getElementById("output").innerHTML = "call(): " + result;
+    }
+
+    function useApply() {
+      let result = person.fullName.apply(user, ["Mumbai", "India"]); // arguments as array
+      document.getElementById("output").innerHTML = "apply(): " + result;
+    }
+  </script>
+
+</body>
+</html>
+

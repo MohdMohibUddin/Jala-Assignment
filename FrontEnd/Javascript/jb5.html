@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Variable Hoisting Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      background: #d35400;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a04000;
+    }
+    #output {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Variable Hoisting</h1>
+  <button onclick="demoHoisting()">Run Hoisting Example</button>
+
+  <div id="output"></div>
+
+  <script>
+    function demoHoisting() {
+      output = "Value of x before declaration: " + x; // undefined due to hoisting
+      var x = 10;
+      output += "<br>Value of x after initialization: " + x;
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>

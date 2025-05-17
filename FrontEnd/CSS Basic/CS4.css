@@ -1,0 +1,30 @@
+/* Basic body style */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+/* Box with fixed pixel size */
+.box-pixels {
+  width: 300px;    
+  height: 150px;   
+  background-color: #3498db;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Box with percentage size */
+.box-percent {
+  width: 50%;      
+  height: 30vh;    
+  background-color: #2ecc71;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}

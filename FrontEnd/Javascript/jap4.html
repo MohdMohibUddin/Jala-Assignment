@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter with Getter and Setter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    #counterValue {
+      font-size: 2rem;
+      margin: 20px;
+      color: #2980b9;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Counter with Getter and Setter</h1>
+
+  <div id="counterValue">Current Count: 0</div>
+  <button onclick="increment()">Count +1</button>
+  <button onclick="reset()">Reset</button>
+
+  <script>
+    const counter = {
+      _count: 0,
+
+      get value() {
+        return this._count;
+      },
+
+      set value(val) {
+        this._count = val;
+      }
+    };
+
+    function updateDisplay() {
+      document.getElementById("counterValue").innerText = "Current Count: " + counter.value;
+    }
+
+    function increment() {
+      counter.value = counter.value + 1;
+      updateDisplay();
+    }
+
+    function reset() {
+      counter.value = 0;
+      updateDisplay();
+    }
+  </script>
+
+</body>
+</html>

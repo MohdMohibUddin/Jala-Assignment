@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sort Fruits Descending</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #fruitList {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #2c3e50;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #1c5980;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fruits Sorting Example</h1>
+  <button onclick="sortFruitsDesc()">Sort Fruits Descending</button>
+
+  <div id="fruitList"></div>
+
+  <script>
+    // Fruits array
+    let fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"];
+
+    // Function to display fruits on page
+    function displayFruits(arr) {
+      const listDiv = document.getElementById('fruitList');
+      listDiv.innerHTML = arr.join(', ');
+    }
+
+    // Initially display fruits
+    displayFruits(fruits);
+
+    // Function to sort fruits in descending order and display
+    function sortFruitsDesc() {
+      fruits.sort(); // Sort ascending by default
+      fruits.reverse(); // Reverse for descending order
+      displayFruits(fruits);
+    }
+  </script>
+
+</body>
+</html>

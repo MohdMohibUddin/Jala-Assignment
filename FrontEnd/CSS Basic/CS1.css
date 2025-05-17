@@ -1,0 +1,54 @@
+/* General page settings */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the profile card */
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 100px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Profile image container */
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+}
+
+/* Info section: name and title */
+.info h2 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.info p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Button styling */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+}

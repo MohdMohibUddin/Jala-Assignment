@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 40px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin: 30px 0 10px;
+  text-align: center;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  margin: 0 auto 40px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.grid > div {
+  background: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+/* 1. Fixed column grid */
+.fixed-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* 2. Responsive auto-fit grid */
+.auto-fit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* 3. Explicit grid with areas */
+.named-grid {
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+
+.header {
+  grid-area: header;
+  background: #2ecc71;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #9b59b6;
+}
+
+.main {
+  grid-area: main;
+  background: #e67e22;
+}
+
+.footer {
+  grid-area: footer;
+  background: #e74c3c;
+}

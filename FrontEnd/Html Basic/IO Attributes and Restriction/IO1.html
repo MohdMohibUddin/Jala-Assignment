@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f1f5f9;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Information Form</h1>
+
+    <form action="#" method="post">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password" placeholder="Enter password">
+
+        <div class="section">
+            <div class="section-title">Gender:</div>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Interests:</div>
+            <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+        </div>
+
+        <div class="btn-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button type="button" onclick="alert('You clicked a custom button!')">Click Me!</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

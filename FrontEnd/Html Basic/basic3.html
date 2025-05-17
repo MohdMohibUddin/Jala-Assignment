@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #222;
+            color: white;
+            padding: 15px 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        section {
+            margin: 40px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        img {
+            border-radius: 8px;
+        }
+        .highlight {
+            color: #d63384;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Basics Page</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#fruits">Fruits List</a>
+        <a href="#quote">Quote</a>
+        <a href="#image">Image</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About This Page</h2>
+    <p>This page shows <i>basic HTML tags</i> like <b>bold</b>, <i>italic</i>, and more.</p>
+    <p>Visit <a href="https://www.geeksforgeeks.org/html-basics/" target="_blank">GeeksForGeeks Website</a> for external reference.</p>
+</section>
+
+<section id="fruits">
+    <h2>My Favorite Fruits</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    <p><label for="name">Enter your name: </label><input type="text" id="name" name="name"></p>
+</section>
+
+<section id="quote">
+    <h2>Inspirational Quote</h2>
+    <blockquote>
+        "The journey of a thousand miles begins with one step." – Lao Tzu
+    </blockquote>
+    <hr>
+</section>
+
+<section id="image">
+    <h2>Sample Image</h2>
+    <img src="1.html" alt="Sample Image">
+    <div style="margin-top: 15px; background-color: #eee; padding: 10px;">
+        <p>This text is inside a <span class="highlight">div</span> with a <span style="color: green;">styled span</span>.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML Basics by Bhai</p>
+</footer>
+
+</body>
+</html>

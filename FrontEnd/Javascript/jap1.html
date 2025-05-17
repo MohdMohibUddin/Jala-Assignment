@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>this Keyword Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2c80b4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button to Make it Disappear</h1>
+
+  <button onclick="hideButton(this)">Click Me</button>
+  <button onclick="hideButton(this)">Click Me Too</button>
+
+  <script>
+    function hideButton(button) {
+      // 'this' refers to the button clicked
+      button.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

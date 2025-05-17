@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8e1;
+  color: #2c3e50;
+  margin: 40px;
+}
+
+/* Heading style */
+.heading {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  text-align: center;
+  color: #e67e22;
+  margin-bottom: 40px;
+}
+
+/* Normal text */
+.normal {
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Italic text */
+.italic {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Bold text */
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Small font size */
+.small {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Large font size */
+.large {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Serif font */
+.serif {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Sans-serif font */
+.sans-serif {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Colored text */
+.colored {
+  color: #c0392b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Text align left */
+.left-align {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Text align center */
+.center-align {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Text align right */
+.right-align {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Text align justify */
+.justify-align {
+  text-align: justify;
+  font-size: 16px;
+  width: 75%;
+  margin: 10px auto 0 auto;
+  line-height: 1.6;
+}

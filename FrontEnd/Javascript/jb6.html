@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strict Mode Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #c0392b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #922b21;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Use Strict Mode Demo</h1>
+  <button onclick="runStrictMode()">Run Strict Example</button>
+  <div id="output"></div>
+
+  <script>
+    function runStrictMode() {
+      'use strict'; // Enable strict mode
+
+      try {
+        // Using variable without declaring it (should throw error in strict mode)
+        undeclaredVar = 50;
+        document.getElementById("output").innerHTML = "Value is: " + undeclaredVar;
+      } catch (error) {
+        // Catch and show the error
+        document.getElementById("output").innerHTML = "Error: " + error.message;
+      }
+    }
+  </script>
+
+</body>
+</html>

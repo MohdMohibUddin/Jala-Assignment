@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debugging with console.log()</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Debugging Example Using console.log()</h2>
+
+  <button onclick="testSum()">Test Sum Function</button>
+
+  <script>
+    function sumArray(arr) {
+      let sum = 0;
+      for (let i = 0; i < arr.length - 1; i++) {
+        console.log("Adding element at index:", i, "value:", arr[i]); // Debug print
+        sum += arr[i];
+      }
+      console.log("Final sum calculated:", sum);
+      return sum;
+    }
+
+    function testSum() {
+      const numbers = [10, 20, 30, 40, 50];
+      console.log("Input array:", numbers);
+
+      const total = sumArray(numbers);
+
+      console.log("Sum returned by function:", total);
+      alert("Sum is: " + total);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Review Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #ccc;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Product Review Form</h1>
+
+    <form action="#" method="post">
+
+        <label for="username">Your Name (max length 20):</label>
+        <input type="text" id="username" name="username" maxlength="20" required>
+
+        <label for="email">Email (readonly):</label>
+        <input type="email" id="email" name="email" value="user@example.com" readonly>
+
+        <label for="rating">Rating (1 to 5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+        <label for="review">Your Review (max 100 chars):</label>
+        <input type="text" id="review" name="review" maxlength="100" size="50" required>
+
+        <label for="promo">Promo Code (disabled):</label>
+        <input type="text" id="promo" name="promo" value="SPRING2025" disabled>
+
+        <label for="country">Country (pre-filled with value):</label>
+        <input type="text" id="country" name="country" value="India" required>
+
+        <label for="code">Reference Code (readonly & value):</label>
+        <input type="text" id="code" name="code" value="REF12345" readonly>
+
+        <input type="submit" value="Submit Review">
+
+    </form>
+
+</body>
+</html>

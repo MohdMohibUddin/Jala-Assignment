@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f0f4f8;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Common box style */
+.box {
+  width: 300px;
+  background-color: #4a90e2;
+  color: white;
+  border: 2px solid #357ABD;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Padding example: adds space inside border */
+.padding-example {
+  padding: 40px 20px 10px 60px; 
+  margin-bottom: 40px; 
+}
+
+/* Margin example: adds space outside border */
+.margin-example {
+  padding: 15px; 
+  margin: 40px 60px 20px 10px; 
+  background-color: #50e3c2;
+  border-color: #27ae60;
+  color: #0b3d23;
+}
+
+/* Paragraph text */
+p {
+  max-width: 400px;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.4;
+}

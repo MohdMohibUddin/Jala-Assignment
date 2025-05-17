@@ -1,0 +1,21 @@
+/* Set body background color and background image */
+body {
+  background-color: #e0f7fa;  
+  background-image: url('1.html');  
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-attachment: fixed; 
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Content box styling */
+.content {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

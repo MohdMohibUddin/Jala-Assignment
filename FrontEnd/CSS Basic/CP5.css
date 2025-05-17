@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.multi-background {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  background-image: url('1.html'), 
+                    url('2.html');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 600px 250px, 300px 150px;
+  background-color: #007acc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

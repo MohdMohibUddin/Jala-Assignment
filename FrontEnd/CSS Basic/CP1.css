@@ -1,0 +1,28 @@
+/* Basic body styling */
+body {
+  background-color: rgb(129, 84, 84);
+  transition: background-color 0.5s ease;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Table with black border */
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+  width: 60%;
+}
+
+/* Table cells with border */
+th, td {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+/* Change page background on table hover */
+table:hover ~ body,
+table:hover {
+  /* This selector alone can't change body bg, so we'll do via JS below */
+}

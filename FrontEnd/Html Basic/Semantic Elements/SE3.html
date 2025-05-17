@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TechBlog - HTML5 Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer, nav, section, article, aside {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+    }
+
+    nav {
+      background-color: #343a40;
+      color: white;
+    }
+
+    nav a {
+      color: #ffc107;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    article {
+      flex: 2;
+      background-color: white;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #e9ecef;
+    }
+
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+    }
+
+    hgroup h1 {
+      margin: 0;
+    }
+
+    mark {
+      background-color: yellow;
+    }
+
+    time {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <hgroup>
+      <h1>TechBlog</h1>
+      <h2>Your daily dose of technology</h2>
+    </hgroup>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Main Article -->
+    <article>
+      <h2>Why HTML5 Matters in 2025</h2>
+      <p><mark>HTML5</mark> has revolutionized modern web development by bringing more structure, accessibility, and semantics to web pages.</p>
+
+      <figure>
+        <img src="1.html" alt="HTML5 Banner">
+        <figcaption>HTML5 enables structured, semantic, and accessible web content.</figcaption>
+      </figure>
+
+      <p>Posted on <time datetime="2025-05-16">May 16, 2025</time> by <strong>Admin</strong>.</p>
+
+      <section>
+        <h3>Key Features of HTML5</h3>
+        <ul>
+          <li>Semantic Elements</li>
+          <li>Multimedia Support</li>
+          <li>Offline Capabilities</li>
+          <li>Mobile Friendly</li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- Sidebar -->
+    <aside>
+      <h3>Related Topics</h3>
+      <ul>
+        <li><a href="#">Semantic Tags in Depth</a></li>
+        <li><a href="#">HTML vs XHTML</a></li>
+        <li><a href="#">New Input Types</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 TechBlog. All rights reserved.
+  </footer>
+
+</body>
+</html>

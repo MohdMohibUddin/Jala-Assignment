@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FOR/IN Loop Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #34495e;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript for...in Loop</h1>
+  <button onclick="showStudentDetails()">Show Student Details</button>
+  
+  <div id="output"></div>
+
+  <script>
+    // Object with student information
+    const student = {
+      name: "Mohib Uddin",
+      age: 22,
+      course: "BE IT",
+      city: "Hyderabad"
+    };
+
+    function showStudentDetails() {
+      let result = "";
+      for (let key in student) {
+        result += key + ": " + student[key] + "<br>";
+      }
+
+      document.getElementById("output").innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>

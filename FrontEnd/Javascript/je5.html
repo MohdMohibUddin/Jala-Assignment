@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Access JSON using Dot Notation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2c3e50;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JSON Object Access Example</h2>
+
+  <button onclick="showPerson()">Show Person Details</button>
+
+  <div id="output"></div>
+
+  <script>
+    // JSON object
+    const person = {
+      firstName: "Mohib",
+      lastName: "Uddin",
+      age: 22,
+      address: {
+        city: "Hyderabad",
+        country: "India"
+      }
+    };
+
+    function showPerson() {
+      const out = document.getElementById("output");
+      out.innerHTML = `
+        First Name: ${person.firstName} <br />
+        Last Name: ${person.lastName} <br />
+        Age: ${person.age} <br />
+        City: ${person.address.city} <br />
+        Country: ${person.address.country}
+      `;
+      console.log("Person object:", person);
+      console.log("Access via dot notation:", person.firstName, person.address.city);
+    }
+  </script>
+
+</body>
+</html>
